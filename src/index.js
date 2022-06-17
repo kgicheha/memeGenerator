@@ -15,3 +15,5 @@ function renderMeme(memeDataObj) {
   memeOftheDay.src = memesArr[rando].url;
   console.log(memeDataObj);
 }
+
+console.log("fart");
