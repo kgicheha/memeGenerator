@@ -16,4 +16,6 @@ function renderMeme(memeDataObj) {
   console.log(memeDataObj);
 }
 
+console.log(memeApiUrl)
 console.log("fart");
+
