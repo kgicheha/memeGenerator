@@ -29,3 +29,4 @@
 
 - github.com just click delete
 - delete locally on machine `git branch --delete new-branch-name`
+- to see what branch `git branch`
