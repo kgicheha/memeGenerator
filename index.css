@@ -2,13 +2,18 @@
     margin: 10px;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+
 }
+
+  }
+
 
 body {
     padding: 20px;
     text-align: center;
     background-color: #fafafa;
   }
+
 
 #meme-of-the-day-img {
     object-fit: cover;

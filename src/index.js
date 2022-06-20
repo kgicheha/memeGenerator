@@ -7,8 +7,9 @@ fetch(memeApiUrl)
   .then((res) => res.json())
   .then(renderMeme);
 
+//function that randomly generates memes
 function renderMeme(memeDataObj) {
-  // decalre memesArr to the array of memes returned
+  // declare memesArr to the array of memes returned
   let memesArr = memeDataObj.data.memes;
   let rando = Math.floor(Math.random() * memesArr.length);
   console.log(rando);
@@ -16,6 +17,10 @@ function renderMeme(memeDataObj) {
   console.log(memeDataObj);
 }
 
+
+
 console.log(memeApiUrl)
-console.log("fart");
+
+
+
 

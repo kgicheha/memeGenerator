@@ -6,15 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
     <script defer src="./src/index.js"></script>
-    <title>Document</title>
+    <title>Meme Generator</title>
 </head>
 <body>
-    <header id="meme_header">
-        <h3 id="header_h3">Meme Generator</h3>
-    </header>
-    <div id="div-id">
-        <h2>Meme of the Day</h2>
-        <img id="meme-of-the-day-img" src="" alt="FAILED TO LOAD MEME">
-    </div>
+     <!-- Meme Details -->
+     <div id="meme-container">
+        <header id="meme_header">
+            <h3 id="header_h3">Meme Generator</h3>
+        </header>
+        <div id="div-id">
+            <h2>Meme of the Day</h2>
+            <button id="generate-meme">Generate Meme</button>
+            <img id="meme-of-the-day-img" src="" alt="FAILED TO LOAD MEME">
+        </div>
+
+        <div id="like-section">
+            <span id="like-count">0 likes</span>
+            <button id="like-button" >♥</button>
+        </div>
+            <ul id="comment-section">
+            <form id="comment-form" class="comment-form">
+            <input
+                class="comment-input"
+                type="text"
+                name="comment"
+                id="comment"
+                placeholder="Add a comment..."
+            />
+            <button id="comment-button" type="submit">Post</button>
+        </form>
+
+        </ul>
+     </div>
+
+     <!-- New Meme Form -->
+    <form id ="create-meme" action="">
+        <h4>Add New Meme</h4>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="new-name">
+        <label for="image">Image</label>
+        <input type="text" name="image" id="new-image">
+        <input type="submit" value="Post">
+    </form>
 </body>
 </html>
