@@ -32,3 +32,5 @@
 - to see what branch `git branch`
 
 
+## run json server
+- json-server --watch db.json

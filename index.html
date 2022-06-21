@@ -14,10 +14,12 @@
         <header id="meme_header">
             <h3 id="header_h3">Meme Generator</h3>
         </header>
+        <button id="generate-meme">Generate Meme</button>
+        <button id="add-meme">＋</button>
+
         <div id="div-id">
-            <h2>Meme of the Day</h2>
-            <button id="generate-meme">Generate Meme</button>
-            <img id="meme-of-the-day-img" src="" alt="FAILED TO LOAD MEME">
+            <!-- <h2>Meme of the Day</h2> -->
+            <img id="meme-of-the-day-img" class="meme-pics" src="" alt="FAILED TO LOAD MEME">
         </div>
 
         <div id="like-section">
@@ -40,13 +42,23 @@
      </div>
 
      <!-- New Meme Form -->
+
+
     <form id ="create-meme" action="">
-        <h4>Add New Meme</h4>
+        <div>
+            <button id="remove-form">✘</button>
+        </div>
         <label for="name">Name:</label>
         <input type="text" name="name" id="new-name">
         <label for="image">Image</label>
         <input type="text" name="image" id="new-image">
         <input type="submit" value="Post">
     </form>
+
+    <!-- Display Created Memes -->
+    <h3>MY MEMES</h3>
+    <ul id="my-memes">
+
+    </ul>
 </body>
 </html>

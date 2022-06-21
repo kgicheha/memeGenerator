@@ -5,9 +5,6 @@
 
 }
 
-  }
-
-
 body {
     padding: 20px;
     text-align: center;
@@ -15,7 +12,7 @@ body {
   }
 
 
-#meme-of-the-day-img {
+.meme-pics {
     object-fit: cover;
     text-align: center;
     width: 300px;
@@ -26,7 +23,7 @@ body {
     color: white;
     border: 1px solid white;
     background-color: #1e90ff;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
 }
 
@@ -88,3 +85,23 @@ input[type="submit"] {
     color: white;
     background-color: black;
   }
+  #add-meme {
+    color: white;
+    font-size: 1.5rem;
+    background-color: black;
+    transition: color 300ms;
+    cursor: pointer;
+    text-align: right;
+}
+
+#create-meme{
+    display: none;
+}
+#remove-form {
+    color: white;
+    font-size: 1.5rem;
+    background-color: black;
+    transition: color 300ms;
+    cursor: pointer;
+}
+
