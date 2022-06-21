@@ -1,19 +1,10 @@
 {
-  "posts": [
+  "memes": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "memeName": "ANT",
+      "memeImage": "https://mcdn.wallpapersafari.com/medium/0/37/5iNj8r.png",
+      "likes": 0,
+      "id": 1
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
