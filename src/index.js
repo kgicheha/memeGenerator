@@ -100,4 +100,4 @@ function randomizer300() {
 
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
-});
+})}
