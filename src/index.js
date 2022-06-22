@@ -1,8 +1,9 @@
 //GET DOM ELEMENTS
-const addMeme = document.querySelector('#add-meme')
-const removeMeme = document.querySelector('#remove-form')
-const createMemeForm = document.querySelector('#create-meme')
-const myMemes = document.querySelector('#my-memes')
+const addMeme = document.querySelector('#add-meme');
+const removeMeme = document.querySelector('#remove-form');
+const createMemeForm = document.querySelector('#create-meme');
+const myMemes = document.querySelector('#my-memes');
+const likeCount = document.getElementById("like-count");
 
 const memeApiUrl = "https://api.imgflip.com/get_memes";
 const memeOftheDay = document.getElementById("meme-of-the-day-img");
@@ -29,6 +30,15 @@ addMeme.addEventListener('click', e=> {
     createMemeForm.style.display = "inline-block"
     addMeme.style.display = "none"
 })
+
+//likes button
+document.getElementById("like-button").addEventListener("click",(likeDisplay));
+
+function likeDisplay() {
+    likeCount.textContent = parseInt(likeCount.textContent) +1+ ` likes`
+}
+
+
 
 //Event Listener to remove form
 removeMeme.addEventListener('click', e=> {
@@ -97,7 +107,12 @@ function randomizer300() {
   // console.log(rando);
 
 }
-
+// key word search & click button
+const searchInput = document.getElementById("comment")
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
+//   fetch("https://api.imgflip.com/get_memes/")
+//     .then(result => result.json())
+//     .then((result) => console.log(result))
+    
 })

@@ -10,7 +10,7 @@ body {
     text-align: center;
     background-color: #fafafa;
     background-color: rgb(211, 245, 231);
-  }
+}
 
 
 .meme-pics {
@@ -52,10 +52,16 @@ body {
     display: inline-block;
   }
 
+  #comment-button {
+    display: inline-block;
+    text-align: center;
+  }
+
 form {
     margin: 1rem 0;
     width: 300px;
     flex-direction: column;
+    text-align: center;
   }
 
   input,
@@ -65,7 +71,7 @@ form {
     background-color: white;
     padding: 0.5rem;
     margin: 0.25rem 0;
-    width: 100%;
+    width: 80%;
   }
 
 input[type="submit"] {
@@ -74,6 +80,7 @@ input[type="submit"] {
     background-color: #1e90ff;
     cursor: pointer;
     transition: all 0.3s;
+    text-align: center;
   }
 
   input[type="submit"]:active {
@@ -94,7 +101,7 @@ input[type="submit"] {
     background-color: black;
     transition: color 300ms;
     cursor: pointer;
-    text-align: right;
+    text-align: center;
 }
 
 #create-meme{
@@ -107,4 +114,11 @@ input[type="submit"] {
     transition: color 300ms;
     cursor: pointer;
 }
+#my-memes, img {
+    object-fit: cover;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    width: auto;
+    }
 
