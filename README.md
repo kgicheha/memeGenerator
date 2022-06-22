@@ -1,6 +1,29 @@
 # memeGenerator
 
-## Git workflow
+## Basic Goals: 
+- Frontend app accessing public API
+- Communicate via JSON
+- Utilize three or more unique event listeners that are interactive
+- Implement one or more array iteration
+- Follow best coding practice
+
+## Explanation:
+
+This app is a  meme generator that generates a random meme upon arrival to the url, as well as upon clicking a generate meme button. The site will also have the ability to “like” a meme, increment likes, and search the memes (on API & database) by keyword. One last feature is to submit a new meme via a form. The form will return add a new meme under the My Memes section of the single page generator app.
+
+## Repo:
+https://github.com/kgicheha/memeGenerator
+
+## API:
+https://api.imgflip.com/get_memes
+
+## Specific Fulfillment:
+- Event Listener One provides a button to click which generates a random meme
+- Event Listener Two provides a button to click to increment like count per meme
+- Event Listener Three provides a button to click to generate a form which in turn will provide a submit to allow the user to add a new meme
+- Iteration exists via the search database by keyword utilizing fetch to search both the API and JSON
+
+## Git workflow helpful highlights
 
 ### Making local changes
 
