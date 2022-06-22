@@ -88,7 +88,7 @@ function renderMyMemes(object) {
 
     myMemes.append(myMemesImage)
 
-
+}
 
 function randomizer300() {
   let memesArr = memeDataVar.data.memes;
@@ -100,4 +100,4 @@ function randomizer300() {
 
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
-})}
+})
