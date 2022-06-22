@@ -111,8 +111,8 @@ function randomizer300() {
 const searchInput = document.getElementById("comment")
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  fetch("https://api.imgflip.com/get_memes/")
-    .then(result => result.json())
-    .then((result) => console.log(result))
+//   fetch("https://api.imgflip.com/get_memes/")
+//     .then(result => result.json())
+//     .then((result) => console.log(result))
     
 })
