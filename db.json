@@ -1,28 +1,16 @@
 {
   "memes": [
     {
-      "memeName": "ANT",
-      "memeImage": "https://mcdn.wallpapersafari.com/medium/0/37/5iNj8r.png",
+      "name": "ANT",
+      "url": "https://mcdn.wallpapersafari.com/medium/0/37/5iNj8r.png",
       "likes": 0,
       "id": 1
     },
     {
-      "memeName": "",
-      "memeImage": "",
+      "name": "",
+      "url": "",
       "likes": 0,
       "id": 2
-    },
-    {
-      "memeName": "",
-      "memeImage": "",
-      "likes": 0,
-      "id": 3
-    },
-    {
-      "memeName": "",
-      "memeImage": "",
-      "likes": 0,
-      "id": 4
     }
   ]
 }
