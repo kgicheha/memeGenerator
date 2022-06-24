@@ -2,25 +2,29 @@
     margin: 10px;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    justify-content: center;
 
 }
 
+
+
 body {
-    padding: 20px;
-    text-align: center;
-    background-color: #fafafa;
-    background-color: rgb(211, 245, 231);
+  padding: 20px;
+  text-align: center;
+  background-color: #fafafa;
+  background-color: rgb(211, 245, 231);
+  justify-content: center;
 }
 
 
 .meme-pics {
-    object-fit: cover;
+  object-fit: cover;
     text-align: center;
     width: 300px;
     height: auto;
-}
-
-#generate-meme{
+  }
+  
+  #generate-meme{
     color: white;
     border: 1px solid white;
     background-color: #1e90ff;
@@ -32,8 +36,8 @@ body {
 #likes-section {
     align-items: center;
     padding: 0 10px;
-}
-
+  }
+  
 #like-button {
     color: rgb(255, 127, 80);
     font-size: 1.5rem;
@@ -44,25 +48,36 @@ body {
     text-align: right;
 }
 
-#comment-form {
+#comment-section {
+  /* justify-content: center; */
     width: 30%;
     border-top: 1px solid #00000020;
     padding: 10px;
     margin-top: 10px;
     display: inline-block;
+  
   }
+  
+#create-meme{
+  width: 30%;
+  border-top: 1px solid #00000020;
+  padding: 10px;
+  margin-top: 10px;
+  display: inline-block;
 
-  #comment-button {
+}
+
+  /* #comment-button {
     display: inline-block;
-    text-align: center;
-  }
+    justify-content: center;
+  } */
 
-form {
+/* form {
     margin: 1rem 0;
     width: 300px;
     flex-direction: column;
     text-align: center;
-  }
+  } */
 
   input,
   textarea {
@@ -106,9 +121,9 @@ input[type="submit"] {
 
 #create-meme{
     display: none;
-}
+  }
 #remove-form {
-    color: white;
+  color: white;
     font-size: 1.5rem;
     background-color: black;
     transition: color 300ms;
@@ -120,5 +135,11 @@ input[type="submit"] {
     display: inline-block;
     margin: auto;
     width: auto;
-    }
+  }
 
+
+  #searchResultH2{
+    /* object-fit: cover; */
+     justify-content: center;
+
+  }
