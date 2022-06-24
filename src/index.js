@@ -1,4 +1,8 @@
 //GET DOM ELEMENTS
+const likeDiv = document.getElementById("like-section");
+const searchInput = document.getElementById("search-input-id");
+const searchH2 = document.getElementById("searchResultH2");
+const imgDiv = document.getElementById("searchPic");
 const choiceDiv = document.getElementById("choice-div");
 const dropDown = document.getElementById("drop-down");
 const addMeme = document.querySelector("#add-meme");
@@ -6,7 +10,6 @@ const removeMeme = document.querySelector("#remove-form");
 const createMemeForm = document.querySelector("#create-meme");
 const myMemes = document.querySelector("#my-memes");
 const likeCount = document.getElementById("like-count");
-
 const memeApiUrl = "https://api.imgflip.com/get_memes";
 const memeOftheDay = document.getElementById("meme-of-the-day-img");
 const generateButton = document.getElementById("generate-meme");
@@ -60,13 +63,11 @@ removeMeme.addEventListener("click", () => {
 //Add meme to random generator function
 createMemeForm.addEventListener("submit", (e) => {
   e.preventDefault();
-
   const newMemes = {
     name: e.target.name.value,
     url: e.target.image.value,
     likes: 0,
   };
-
   fetch("http://localhost:3000/memes", {
     method: "POST",
     headers: {
@@ -103,15 +104,9 @@ function randomizer300() {
   memeOftheDay.src = memesArr[rando].url;
 }
 
-const likeDiv = document.getElementById("like-section");
-
-// key word search & click button
-const searchInput = document.getElementById("search-input-id");
-
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
   let img = document.createElement("img");
-
   let memeArr = memeDataVar.data.memes;
   let searchString = searchInput.value.toLowerCase();
   let foundMemes = memeArr.find((element) => {
@@ -122,9 +117,15 @@ searchForm.addEventListener("submit", (e) => {
   });
   img.className = "meme_pics";
   img.src = foundMemes.url;
-  likeDiv.append(img);
+  img.id = "imgID";
+  img.addEventListener("click", removeImage);
+  imgDiv.append(img);
   form.reset();
 });
+
+function removeImage() {
+  document.getElementById("imgID").remove();
+}
 
 function renderDrop(memes) {
   let memesArr = memes.data.memes;
